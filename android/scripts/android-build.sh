@@ -8,6 +8,7 @@ cd ..
 
 yes | sudo gem install bundler
 
+bundle config set --local path 'vendor/bundle'
 bundle install
 
 if [ "$APPLICATION_TYPE" == "debug" ]; then
